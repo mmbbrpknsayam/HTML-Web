@@ -1,3 +1,102 @@
+<!-- newest -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lol Sidebar Style</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      background-color: #1e1e1e; /* Placeholder for now */
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #111111;
+      color: white;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .sidebar .logo {
+      padding: 0 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .sidebar a {
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      transition: background 0.2s;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #2c2c2c;
+    }
+
+    .sidebar a.active {
+      background-color: #3a3a3a;
+    }
+
+    .sidebar .spacer {
+      height: 1px;
+      margin: 10px 0;
+      background-color: #333;
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">Creator Hub</div>
+    <a href="#" class="active">Home</a>
+    <a href="#">Creations</a>
+    <a href="#">Analytics</a>
+    <a href="#">Finances</a>
+    <a href="#">Localization</a>
+    <a href="#">Rights Manager</a>
+    <a href="#">Ads</a>
+    <a href="#">Open Cloud</a>
+
+    <div class="spacer"></div>
+
+    <a href="#">gg.gg</a>
+  </div>
+
+  <div class="main">
+    <!-- Page content -->
+    <h1>Welcome</h1>
+    <p>This is the main area for content.</p>
+  </div>
+
+</body>
+</html>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
