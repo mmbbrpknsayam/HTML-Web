@@ -92,3 +92,86 @@
 
 </body>
 </html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+      font-family: sans-serif;
+      background: #0e1014;
+      color: white;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 200px;
+      background: #1a1d24;
+      padding: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background: #2a2d36;
+    }
+
+    .main {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    #dashboard:target,
+    #projects:target,
+    #users:target {
+      display: block;
+    }
+
+    /* Default tab */
+    .main:not(:has(:target)) #dashboard {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#projects">Projects</a>
+    <a href="#users">Users</a>
+  </div>
+
+  <div class="main">
+    <div id="dashboard" class="tab-content">
+      <h1>Dashboard</h1>
+      <p>Welcome to your dashboard.</p>
+    </div>
+    <div id="projects" class="tab-content">
+      <h1>Projects</h1>
+      <p>No project created yet.</p>
+    </div>
+    <div id="users" class="tab-content">
+      <h1>Users</h1>
+      <p>No users available.</p>
+    </div>
+  </div>
+
+</body>
+</html>
