@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login</title></head>
+<body>
+  <h2>Login</h2>
+  <input id="username" placeholder="Username"><br>
+  <input id="password" type="password" placeholder="Password"><br>
+  <button onclick="login()">Login</button>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      // hardcoded demo user
+      if (user === "admin" && pass === "1234") {
+        alert("Login success!");
+        window.location.href = "dashboard.html";
+      } else {
+        alert("Wrong login");
+      }
+    }
+  </script>
+</body>
+</html>
