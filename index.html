@@ -23,3 +23,42 @@
   </script>
 </body>
 </html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head><title>Login</title></head>
+<body>
+  <h2>Login</h2>
+  <input id="username" placeholder="Username"><br>
+  <input id="password" type="password" placeholder="Password"><br>
+  <button onclick="login()">Login</button>
+
+  <script src="credentials.js"></script>
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      if (user === CREDENTIALS.username && pass === CREDENTIALS.password) {
+        alert("Login success!");
+        window.location.href = "dashboard.html";
+      } else {
+        alert("Wrong login");
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+const CREDENTIALS = {
+  username: "admin",
+  password: "1234"
+};
